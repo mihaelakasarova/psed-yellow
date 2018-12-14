@@ -1,0 +1,239 @@
+/* LAYOUT */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #757575;
+}
+
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.center {
+    text-align: center
+}
+
+/* LAYOUT END */
+
+/* response */
+
+.img-responsive {
+    width: 100%
+}
+
+/* response end*/
+
+/* BUTTONS */
+
+button {
+    display: inline-flex;
+    align-items: center;
+    height: 55px;
+    width: 180px;
+    white-space: pre-wrap;
+    justify-content: center;
+    font-size: 18px;
+}
+
+button.dark {
+    background-color: #000000;
+    color: #ffe400;
+    border: 1px solid #a6a6a6;
+}
+
+button.light {
+    background-color: #ffe400;
+    color: #000000;
+    border: 1px solid #ffe400;
+}
+
+button.ghost {
+    border: 1px solid #444444;
+    background: transparent;
+}
+
+button+button {
+    margin-left: 25px;
+}
+
+/* BUTTONS END */
+
+/* HEADERS */
+
+.title {
+    font-family: 'Montserrat-Black', sans-serif;
+    position: relative;
+    font-size: 30px;
+    color: #444444;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title::not(.counting)::before {
+    font-family: 'Montserrat-Black', sans-serif;
+    position: absolute;
+    content: " class .title";
+    color: #f0f0f0;
+    font-size: 90px;
+    font-weight: bold;
+    left: 25%;
+    display: block;
+    bottom: -15px;
+    z-index: -1;
+}
+
+.hero-title {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 60px;
+    color: #444444;
+    text-transform: uppercase;
+}
+
+.mini-title {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.big-title{
+        font-size: 18px;
+        text-align: left;
+        margin-top: 0;
+    text-transform: uppercase;
+}
+
+.title-white {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Black';
+}
+
+.text-white {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 16px;}
+/* headers END  */
+
+/* icon cards */
+
+.icon-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 29%;
+    text-align: center;
+}
+
+.card header h4 p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.card-dark {
+    color: #ffe400;
+    background-color: #212121;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.card-light {
+    color: #212121;
+    background-color: #ffe400;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.card [class ^="icon-"] {
+    font-size: 126px;
+}
+
+.card-dark [class ^="icon-"] {
+    color: #ffe400;
+}
+
+.card-light [class ^="icon-"] {
+    color: white;
+}
+
+/* icon cards end */
+
+/* grid */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col-1 {
+    flex: 0 0 100%;
+    /* background-color: hotpink; */
+}
+
+.col-2 {
+    flex: 0 0 48%;
+    /* background-color: hotpink; */
+}
+
+.col-3 {
+    flex: 0 0 32%;
+    /* background-color: hotpink; */
+}
+
+.col-4 {
+    flex: 0 0 23%;
+    /* background-color: hotpink; */
+}
+
+.col-5 {
+    flex: 0 0 18%;
+    /* background-color: hotpink; */
+}
+
+.col-6 {
+    flex: 0 0 15%;
+}
+
+div [class^='col-'] {
+    margin-top: 3px;
+    padding: 5px;
+}
+
+/* grid end */
